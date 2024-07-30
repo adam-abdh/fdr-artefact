@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MUN Position Papers</title>
+</head>
+<body>
+    <div class="container">
+        <h1>MUN Position Papers Submission</h1>
+        
+        <!-- Login Form -->
+        <div id="login-form">
+            <h2>Login</h2>
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="fdrID">FDR ID:</label>
+                <input type="text" id="fdrID" name="fdrID" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Registration Form -->
+        <div id="registration-form" style="display: none;">
+            <h2>Register</h2>
+            <form id="registerForm" onsubmit="handleRegister(event)">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="email">Email:</label>
+                <input type="email" id="regEmail" name="email" required>
+                <label for="fdrID">FDR ID:</label>
+                <input type="text" id="regFdrID" name="fdrID" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <!-- Upload Form -->
+        <div id="upload-form" style="display: none;">
+            <h2>Upload Position Papers</h2>
+            <div id="user-info"></div>
+            <form id="uploadForm" onsubmit="handleUpload(event)">
+                <label for="file">Upload Position Paper:</label>
+                <input type="file" id="file" name="file" required>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
