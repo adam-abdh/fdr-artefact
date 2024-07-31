@@ -1,375 +1,312 @@
-:root {
-    --main-color: #024d99;
-    --secondary-color: #949494;
-    --error-color: red;
-    --border-color: lightgrey;
-    --card-max-width: 600px;
-    --card-margin: 0 auto 20px;
-    --dark-grey: #474747;
-}
-
-/* Extra Light (Extraleicht) */
 @font-face {
-  font-family: 'Sohne Extraleicht';
-  font-weight: 200;
-  font-style: normal;
-  src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-Extraleicht.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'Sohne Extraleicht';
-  font-weight: 200;
-  font-style: italic;
-  src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-ExtraleichtKursiv.otf") format("opentype");
-}
-
-/* Light (Leicht) */
-@font-face {
-  font-family: 'Sohne Leicht';
-  font-weight: 300;
-  font-style: normal;
-  src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-Leicht.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'Sohne Leicht';
-  font-weight: 300;
-  font-style: italic;
-  src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-LeichtKursiv.otf") format("opentype");
-}
-
-/* Regular (Buch) */
-@font-face {
-  font-family: 'Sohne Buch';
-  font-weight: 400;
-  font-style: normal;
-  src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-Buch.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'Sohne Buch';
-  font-weight: 400;
-  font-style: italic;
-  src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-BuchKursiv.otf") format("opentype");
-}
-
-/* Semi-Bold (Kraftig) */
-@font-face {
-  font-family: 'Sohne Kraftig';
-  font-weight: 500;
-  font-style: normal;
-  src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-Kraftig.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'Sohne Kraftig';
-  font-weight: 500;
-  font-style: italic;
-  src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-KraftigKursiv.otf") format("opentype");
-}
-
-/* Bold (Halbfett) */
-@font-face {
-  font-family: 'Sohne Halbfett';
-  font-weight: 600;
-  font-style: normal;
-  src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-Halbfett.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'Sohne Halbfett';
-  font-weight: 600;
-  font-style: italic;
-  src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-HalbfettKursiv.otf") format("opentype");
-}
-
-/* Extra Bold (Fett) */
-@font-face {
-  font-family: 'Sohne Fett';
-  font-weight: 700;
-  font-style: normal;
-  src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-Fett.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'Sohne Fett';
-  font-weight: 700;
-  font-style: italic;
-  src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-FettKursiv.otf") format("opentype");
-}
-
-/* Black (Extrafett) */
-@font-face {
-  font-family: 'Sohne Extrafett';
-  font-weight: 800;
-  font-style: normal;
-  src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-Extrafett.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'Sohne Extrafett';
-  font-weight: 800;
-  font-style: italic;
-  src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-ExtrafettKursiv.otf") format("opentype");
-}
-
-/* Ultra Black (Dreiviertelfett) */
-@font-face {
-  font-family: 'Sohne Dreiviertelfett';
-  font-weight: 900;
-  font-style: normal;
-  src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-Dreiviertelfett.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'Sohne Dreiviertelfett';
-  font-weight: 900;
-  font-style: italic;
-  src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-DreiviertelfettKursiv.otf") format("opentype");
-}
-
-/* Black */
-@font-face {
-  font-family: 'MartinaPlantijn Black';
-  font-weight: 900;
-  font-style: normal;
-  src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-Black.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'MartinaPlantijn Black';
-  font-weight: 900;
-  font-style: italic;
-  src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-BlackItalic.otf') format('opentype');
-}
-
-/* Bold */
-@font-face {
-  font-family: 'MartinaPlantijn Bold';
-  font-weight: 700;
-  font-style: normal;
-  src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-Bold.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'MartinaPlantijn Bold';
-  font-weight: 700;
-  font-style: italic;
-  src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-BoldItalic.otf') format('opentype');
-}
-
-/* Medium */
-@font-face {
-  font-family: 'MartinaPlantijn Medium';
-  font-weight: 500;
-  font-style: normal;
-  src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-Medium.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'MartinaPlantijn Medium';
-  font-weight: 500;
-  font-style: italic;
-  src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-MediumItalic.otf') format('opentype');
-}
-
-/* Light */
-@font-face {
-  font-family: 'MartinaPlantijn Light';
-  font-weight: 300;
-  font-style: normal;
-  src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-Light.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'MartinaPlantijn Light';
-  font-weight: 300;
-  font-style: italic;
-  src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-LightItalic.otf') format('opentype');
-}
-
-/* Regular */
-@font-face {
-  font-family: 'MartinaPlantijn Regular';
-  font-weight: 400;
-  font-style: normal;
-  src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-Regular.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'MartinaPlantijn Regular';
-  font-weight: 400;
-  font-style: italic;
-  src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-Italic.otf') format('opentype');
-}
-
-
-/* Set default font family */
-html {
-  font-family: 'Sohne Buch', sans-serif;
-}
-
-.bottom-gradient {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 50px; /* Adjust the height as needed */
-    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
-    pointer-events: none; /* Allows clicking through the gradient */
-    z-index: 1000; /* Ensure it's above other content */
-}
-
-body {
-    font-family: 'Sohne Buch', sans-serif;
+    font-family: 'Sohne Extraleicht';
+    font-weight: 200;
+    font-style: normal;
+    src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-Extraleicht.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: 'Sohne Extraleicht';
+    font-weight: 200;
+    font-style: italic;
+    src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-ExtraleichtKursiv.otf") format("opentype");
+  }
+  
+  /* Light (Leicht) */
+  @font-face {
+    font-family: 'Sohne Leicht';
+    font-weight: 300;
+    font-style: normal;
+    src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-Leicht.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: 'Sohne Leicht';
+    font-weight: 300;
+    font-style: italic;
+    src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-LeichtKursiv.otf") format("opentype");
+  }
+  
+  /* Regular (Buch) */
+  @font-face {
+    font-family: 'Sohne Buch';
     font-weight: 400;
-    letter-spacing: -0.02em;
-    line-height: 1.25em;
-    font-size: 1em;
-    margin-bottom: 15px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    color: var(--dark-grey); 
-}
-
-hr {
-    border: 1px solid #f5f5f5;
-    margin: 0px 0;
-    width: 100%; 
-}
-
-h2 {
-    font-family: 'MartinaPlantijn Regular', sans-serif;
-    font-weight: 700;
-    color: var(--main-color);
-    line-height: 1.18em;
-    letter-spacing: -0.01em;
-    font-size: 2.17em;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    text-align: left; 
-}
-
-.question {
-    font-family: 'Sohne Buch', sans-serif;
+    font-style: normal;
+    src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-Buch.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: 'Sohne Buch';
+    font-weight: 400;
+    font-style: italic;
+    src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-BuchKursiv.otf") format("opentype");
+  }
+  
+  /* Semi-Bold (Kraftig) */
+  @font-face {
+    font-family: 'Sohne Kraftig';
+    font-weight: 500;
+    font-style: normal;
+    src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-Kraftig.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: 'Sohne Kraftig';
+    font-weight: 500;
+    font-style: italic;
+    src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-KraftigKursiv.otf") format("opentype");
+  }
+  
+  /* Bold (Halbfett) */
+  @font-face {
+    font-family: 'Sohne Halbfett';
     font-weight: 600;
-    letter-spacing: -0.02em;
-    line-height: 1.3em;
-    color: var(--main-color);
-    font-size: 1.15em;
-    margin-bottom: 20px;
-    text-align: left; 
-}
-
-.subheading, .question-description {
-    font-family: 'Sohne Buch', sans-serif;
+    font-style: normal;
+    src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-Halbfett.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: 'Sohne Halbfett';
+    font-weight: 600;
+    font-style: italic;
+    src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-HalbfettKursiv.otf") format("opentype");
+  }
+  
+  /* Extra Bold (Fett) */
+  @font-face {
+    font-family: 'Sohne Fett';
+    font-weight: 700;
+    font-style: normal;
+    src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-Fett.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: 'Sohne Fett';
+    font-weight: 700;
+    font-style: italic;
+    src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-FettKursiv.otf") format("opentype");
+  }
+  
+  /* Black (Extrafett) */
+  @font-face {
+    font-family: 'Sohne Extrafett';
+    font-weight: 800;
+    font-style: normal;
+    src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-Extrafett.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: 'Sohne Extrafett';
+    font-weight: 800;
+    font-style: italic;
+    src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-ExtrafettKursiv.otf") format("opentype");
+  }
+  
+  /* Ultra Black (Dreiviertelfett) */
+  @font-face {
+    font-family: 'Sohne Dreiviertelfett';
+    font-weight: 900;
+    font-style: normal;
+    src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-Dreiviertelfett.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: 'Sohne Dreiviertelfett';
+    font-weight: 900;
+    font-style: italic;
+    src: url("https://brandfonts.s3.eu-north-1.amazonaws.com/sohne/Sohne-DreiviertelfettKursiv.otf") format("opentype");
+  }
+  
+  /* Black */
+  @font-face {
+    font-family: 'MartinaPlantijn Black';
+    font-weight: 900;
+    font-style: normal;
+    src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-Black.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'MartinaPlantijn Black';
+    font-weight: 900;
+    font-style: italic;
+    src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-BlackItalic.otf') format('opentype');
+  }
+  
+  /* Bold */
+  @font-face {
+    font-family: 'MartinaPlantijn Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-Bold.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'MartinaPlantijn Bold';
+    font-weight: 700;
+    font-style: italic;
+    src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-BoldItalic.otf') format('opentype');
+  }
+  
+  /* Medium */
+  @font-face {
+    font-family: 'MartinaPlantijn Medium';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-Medium.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'MartinaPlantijn Medium';
+    font-weight: 500;
+    font-style: italic;
+    src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-MediumItalic.otf') format('opentype');
+  }
+  
+  /* Light */
+  @font-face {
+    font-family: 'MartinaPlantijn Light';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-Light.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'MartinaPlantijn Light';
+    font-weight: 300;
+    font-style: italic;
+    src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-LightItalic.otf') format('opentype');
+  }
+  
+  /* Regular */
+  @font-face {
+    font-family: 'MartinaPlantijn Regular';
     font-weight: 400;
-    letter-spacing: -0.031em;
-    line-height: 1.3em;
-    font-size: 1em;
-    margin-bottom: 15px;
-    color: var(--secondary-color);
-    text-align: left; 
-}
-
-label, input, select, textarea, button {
-    font-family: 'Sohne Buch', sans-serif;
+    font-style: normal;
+    src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-Regular.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'MartinaPlantijn Regular';
     font-weight: 400;
-    letter-spacing: -0.02em;
-    font-size: 1em;
-    line-height: 1.4;
-    color: var(--dark-grey); 
-}
+    font-style: italic;
+    src: url('https://brandfonts.s3.eu-north-1.amazonaws.com/martina/MartinaPlantijn-Italic.otf') format('opentype');
+  }
+  
+  
+  /* Set default font family */
+  html {
+    font-family: 'Sohne Buch', sans-serif;
+  }
+  
 
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Sohne Buch, sans-serif;
-}
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Sohne Buch', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
+        .gradient-container {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background-color: #1e2c4f;
+            overflow: hidden;
+            z-index: -1;
+        }
 
-.container {
-  display: flex;
-  height: 100%;
-}
+        .blob {
+            position: absolute;
+            filter: blur(80px);
+            opacity: 0.6;
+        }
 
-.gradient-section {
-  flex: 1;
-  background: linear-gradient(-45deg, #EA7BB3, #EC7FB0, #FAB29B, #6b4a8c, #344F78, #5A63B2, #4661A4, #2A89BE);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
+        #blob1 { left: -150px; top: 50%; animation: move1 15s infinite alternate; }
+        #blob2 { right: -125px; top: 30%; animation: move2 12s infinite alternate; }
+        #blob3 { left: 50%; bottom: -100px; animation: move3 14s infinite alternate; }
+        #blob4 { right: 20%; top: -140px; animation: move4 13s infinite alternate; }
+        #blob5 { left: 25%; top: 60%; animation: move5 16s infinite alternate; }
+        #blob6 { right: 35%; bottom: 10%; animation: move6 11s infinite alternate; }
 
-@keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+        @keyframes move1 { 0% { transform: translate(0, -50%) scale(1); } 100% { transform: translate(200px, -30%) scale(1.5); } }
+        @keyframes move2 { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(-180px, 100px) scale(1.3); } }
+        @keyframes move3 { 0% { transform: translate(-50%, 0) scale(1); } 100% { transform: translate(-30%, 200px) scale(1.4); } }
+        @keyframes move4 { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(-100px, 150px) scale(1.2); } }
+        @keyframes move5 { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(120px, -100px) scale(1.4); } }
+        @keyframes move6 { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(-80px, -120px) scale(1.3); } }
 
-.login-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f5f5;
-  padding: 2rem;
-}
+        .card {
+            background: rgba(12, 12, 12, 0.53);
+            border-radius: 12px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8.7px);
+            -webkit-backdrop-filter: blur(8.7px);
+            border: 10px solid rgba(48, 48, 48, 0.663);
+            padding: 2rem;
+            width: 75%; /* Full width */
+            max-width: 400px; 
+            text-align: left;
+            position: relative;
+            z-index: 1;
+            color: white; /* Text color */
+        }
 
-.logo {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 2rem;
-}
+        .logo {
+            position: absolute;
+            top: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
 
-.login-options {
-  width: 100%;
-  max-width: 300px;
-}
+        .logo img {
+            width: 100%;
+            max-width: 200px;
+        }
 
-.login-option {
-  display: block;
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  text-align: left;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+        .header-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+            text-align: left;
+        }
 
-.login-option:last-child {
-  margin-bottom: 0;
-}
+        .description {
+            color: white; /* Text color */
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            text-align: left;
+        }
 
-.login-option.spid {
-  background-color: #0066CC;
-  color: white;
-}
+        .divider {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Divider color */
+            margin-bottom: 1.5rem;
+        }
 
-.login-option.cie {
-  background-color: #FF6600;
-  color: white;
-}
+        .button-container {
+            text-align: left;
+        }
 
-.login-option.unibo {
-  background-color: #800000;
-  color: white;
-}
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            text-align: center;
+            font-weight: bold;
+            color: white; /* Button text color */
+            margin-bottom: 1rem;
+            background: white; /* Button background color */
+            transition: background 0.3s, transform 0.3s;
+            color: rgba(128, 0, 128, 0.7); /* Soft, faded purple text */
+        }
 
-.login-option:hover {
-  opacity: 0.9;
-}
-
-.footer {
-  margin-top: 2rem;
-  text-align: center;
-  font-size: 0.8rem;
-  color: #666;
-}
-
-
+        .button:hover {
+            background: rgba(255, 255, 255, 0.9); /* Button hover background color */
+            transform: scale(0.96);
+        }
