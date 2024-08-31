@@ -246,7 +246,7 @@
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(8.7px);
             -webkit-backdrop-filter: blur(8.7px);
-            border: 10px solid rgba(48, 48, 48, 0.663);
+            border: 2px solid rgba(48, 48, 48, 0.663);
             padding: 2rem;
             width: 75%; /* Full width */
             max-width: 400px; 
